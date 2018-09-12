@@ -7,7 +7,9 @@
  */
 
 function averaging($red,$green,$blue){
+
     /*
+     * Prompt:
      * simply compute the average of the red, green and blue values
      * (used to convert sailboat image):
      * Grey = ( r + g + b ) /3
@@ -17,14 +19,19 @@ function averaging($red,$green,$blue){
 
 function lightness($red,$green,$blue){
     /*
+     * Prompt:
      * Lightness - average just the “brightest” and “darkest” colors:
      * Grey = ( max(r, g, b) + min(r, g, b)) /2
      */
 
+
+
+
 }
 
-function luminess($red,$green,$blue,$w1,$w2,$w3){
+function luminous($red,$green,$blue,$w1 = 1,$w2 = 1,$w3 = 1){
     /*
+     * Prompt:
      * Luminous – applies “weighted” values to each r, g and b component based on experiment results
      * on human perception of colors.
      * Grey = w1 * r + w2 * g + w3 * b; where w1 + w2 + w3 = 1;
@@ -38,6 +45,7 @@ function luminess($red,$green,$blue,$w1,$w2,$w3){
 
 function convertImageToGrayScale( $fileNameIn , $fileNameOut, $method){
     /*
+     * Prompt:
      * Create a new function (from scratch):
      * int convertImageToGrayScale( $fileNameIn , $fileNameOut, $method)
      * The string $fileNameIn specifies the source image file.
